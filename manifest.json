@@ -1,0 +1,38 @@
+{
+    "manifest_version": 3,
+    "name": "TimeWarp",
+    "version": "0.1",
+    "description": "Speed up, slow down, or freeze page time.",
+    "permissions": [
+        "storage"
+    ],
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "128": "assets/logo/logo-256.png"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "warp.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": true,
+            "world": "MAIN"
+        },
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "bridge.js"
+            ],
+            "run_at": "document_start",
+            "all_frames": true
+        }
+    ]
+}
