@@ -1,8 +1,7 @@
 <p align="center">
   <img src="assets/logo/logo-128.png" alt="TimeWarp logo" width="96">
+  <h1 align="center">Timewarp</h1>
 </p>
-
-# TimeWarp
 
 Speed up, slow down, or freeze time on any web page.
 
